@@ -1,0 +1,129 @@
+.connect-doctor-page__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 24px;
+}
+
+.connect-doctor-page__intro {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.connect-doctor-page__benefits {
+  display: grid;
+  gap: 14px;
+}
+
+.connect-doctor-page__benefit {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(111, 134, 182, 0.14);
+  color: var(--text-dark-secondary);
+  line-height: 1.72;
+}
+
+.connect-doctor-page__benefit svg {
+  margin-top: 4px;
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.connect-doctor-page__cta-card,
+.connect-doctor-card {
+  padding: 30px;
+}
+
+.connect-doctor-page__cta-card {
+  display: grid;
+  gap: 16px;
+}
+
+.connect-doctor-page__cta-icon,
+.connect-doctor-card__icon {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: rgba(47, 109, 246, 0.08);
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+
+.connect-doctor-page__cta-card h2,
+.connect-doctor-card__heading h2 {
+  margin: 0;
+  font-family: var(--font-family-display);
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+}
+
+.connect-doctor-page__cta-card p,
+.connect-doctor-card__copy {
+  margin: 0;
+  color: var(--text-dark-secondary);
+  line-height: 1.75;
+}
+
+.connect-doctor-card {
+  display: grid;
+  gap: 18px;
+}
+
+.connect-doctor-card__heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.connect-doctor-form {
+  display: grid;
+  gap: 16px;
+}
+
+.connect-doctor-form__submit {
+  width: 100%;
+}
+
+.connect-doctor-card__reply {
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(47, 109, 246, 0.06);
+  border: 1px solid rgba(47, 109, 246, 0.12);
+}
+
+.connect-doctor-card__reply strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.connect-doctor-card__reply p {
+  margin: 0;
+  color: var(--text-dark-secondary);
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 980px) {
+  .connect-doctor-page__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .connect-doctor-page__cta-card,
+  .connect-doctor-card {
+    padding: 24px;
+  }
+
+  .connect-doctor-card__heading {
+    align-items: start;
+  }
+}

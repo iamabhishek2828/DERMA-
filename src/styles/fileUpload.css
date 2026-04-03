@@ -1,0 +1,93 @@
+/* src/styles/FileUpload.css */
+
+.file-upload-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.file-upload-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.file-upload-container input[type="file"] {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.file-upload-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-container button:hover {
+  background-color: #0056b3;
+}
+
+.file-upload-container button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.ai-advice {
+  background: #f5f7fa;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-top: 18px;
+  font-size: 1.1em;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  white-space: pre-line;
+  max-height: 300px;
+  overflow-y: auto;
+  line-height: 1.6;
+  border-left: 4px solid #4f8cff;
+}
+
+.ai-advice h3 {
+  margin-top: 0;
+  color: #4f8cff;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .file-upload-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .file-upload-container h1 {
+    font-size: 20px;
+  }
+
+  .file-upload-container button {
+    padding: 8px 16px;
+  }
+}

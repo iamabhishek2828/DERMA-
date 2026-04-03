@@ -1,0 +1,20 @@
+.features {
+  padding: 2rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature {
+  margin: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+.feature img {
+  max-width: 100px;
+}

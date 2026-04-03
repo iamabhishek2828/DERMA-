@@ -1,0 +1,125 @@
+@media (max-width: 600px) {
+  .diagnosis-page {
+    padding: 12px 0;
+  }
+  .diagnosis-card {
+    padding: 1.2rem 0.5rem;
+    border-radius: 16px;
+    width: 98vw;
+    min-height: 40vh;
+    margin: 16px 0;
+  }
+  .diagnosis-card h1 {
+    font-size: 1.3rem;
+  }
+  .diagnosis-card h2 {
+    font-size: 1.1rem;
+  }
+  .diagnosis-card p {
+    font-size: 0.95rem;
+  }
+  .gemini-advice-section {
+    margin-top: 0.7rem;
+  }
+  .gemini-advice {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.95rem;
+  }
+}
+.diagnosis-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f0fa 0%, #f8fcff 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100vw;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+
+}
+.diagnosis-card {
+  background: #fff;
+  box-shadow: 0 8px 32px 0 #b5d0e6, 0 2px 8px #e3f0fa;
+  border-radius: 28px;
+  padding: 2.5rem 2rem;
+  width: 90vw;
+  max-width: 900px;
+  min-height: 60vh;
+  color: #222;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.diagnosis-card h1 {
+  color: #2196f3;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.diagnosis-card h2 {
+  color: #1976d2;
+  margin-bottom: 0.7rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.diagnosis-card p {
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.gemini-advice-section {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.gemini-advice {
+  background: #e6faff;
+  color: #185a9d;
+  border-radius: 16px;
+  padding: 1.2rem 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  min-height: 120px;
+  box-shadow: 0 2px 12px #00fff044;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.loader {
+  color: #00bcd4;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.error {
+  color: #ff7e5f;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  .diagnosis-card {
+    padding: 1.2rem 0.5rem;
+    min-height: 70vh;
+    max-width: 98vw;
+  }
+  .gemini-advice {
+    font-size: 0.98rem;
+    padding: 0.8rem 0.5rem;
+    max-height: 40vh;
+  }
+}

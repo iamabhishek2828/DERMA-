@@ -1,0 +1,11 @@
+.git
+.env
+.venv
+.venv311
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+nohup.out

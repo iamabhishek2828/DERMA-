@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --white: #ffffff;
+  --color-bg-primary: #08101f;
+  --color-bg-secondary: #101c33;
+  --color-bg-card: rgba(255, 255, 255, 0.8);
+  --color-bg-glass: rgba(255, 255, 255, 0.62);
+  --color-bg-glass-hover: rgba(255, 255, 255, 0.78);
+  --color-bg-light: #f4f7fd;
+  --color-bg-light-secondary: #ecf2ff;
+  --light-bg: #f4f7fd;
+  --secondary-bg: #d8e4ff;
+  --container-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(247, 250, 255, 0.96) 100%);
+
+  --color-primary: #2f6df6;
+  --color-primary-dim: rgba(47, 109, 246, 0.12);
+  --color-primary-glow: rgba(47, 109, 246, 0.22);
+  --color-secondary: #1bb5d8;
+  --color-secondary-dim: rgba(27, 181, 216, 0.12);
+  --color-accent-pink: #ff7c6d;
+  --color-accent-green: #17b890;
+  --color-accent-amber: #ffbf47;
+
+  --primary-blue: #1c63dc;
+  --primary-gradient: linear-gradient(135deg, #2f6df6 0%, #1bb5d8 100%);
+  --primary-gradient-reverse: linear-gradient(135deg, #1bb5d8 0%, #2f6df6 100%);
+  --gradient-primary: linear-gradient(135deg, #2f6df6 0%, #1bb5d8 100%);
+  --gradient-primary-soft: linear-gradient(135deg, rgba(47, 109, 246, 0.12) 0%, rgba(27, 181, 216, 0.1) 100%);
+  --gradient-hero: linear-gradient(135deg, #0a1630 0%, #11254b 48%, #173564 100%);
+  --gradient-card: linear-gradient(160deg, rgba(255, 255, 255, 0.92) 0%, rgba(241, 246, 255, 0.96) 100%);
+  --gradient-navbar: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.8) 100%);
+  --gradient-footer: linear-gradient(180deg, #0a1630 0%, #071224 100%);
+  --gradient-text: linear-gradient(135deg, #2f6df6 0%, #1bb5d8 52%, #ff7c6d 100%);
+  --gradient-btn: linear-gradient(135deg, #2f6df6 0%, #1bb5d8 100%);
+  --gradient-btn-hover: linear-gradient(135deg, #275ddd 0%, #1698b6 100%);
+  --gradient-light-hero: linear-gradient(180deg, #f8faff 0%, #edf3ff 50%, #f7fbff 100%);
+  --gradient-light-card: linear-gradient(155deg, rgba(255, 255, 255, 0.95) 0%, rgba(242, 246, 255, 0.95) 100%);
+  --hero-gradient: linear-gradient(180deg, #eef3ff 0%, #f9fbff 100%);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-muted: rgba(255, 255, 255, 0.48);
+  --text-dark: #0f172e;
+  --text-dark-secondary: #44526c;
+  --text-medium: #64748f;
+
+  --font-family: 'Manrope', 'Segoe UI', sans-serif;
+  --font-family-display: 'Space Grotesk', 'Manrope', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  --font-size-hero-desktop: clamp(3.2rem, 5vw, 5rem);
+  --font-size-hero-laptop: 4rem;
+  --font-size-hero-tablet: 3rem;
+  --font-size-hero-mobile: 2.35rem;
+  --font-size-h1-desktop: 2.35rem;
+  --font-size-h1-laptop: 2.1rem;
+  --font-size-h1-tablet: 1.9rem;
+  --font-size-h1-mobile: 1.6rem;
+  --font-size-body-desktop: 1rem;
+  --font-size-body-laptop: 1rem;
+  --font-size-body-tablet: 0.98rem;
+  --font-size-body-mobile: 0.95rem;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 96px;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-2xl: 34px;
+  --radius-3xl: 40px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 8px 24px rgba(18, 38, 82, 0.08);
+  --shadow-md: 0 18px 48px rgba(18, 38, 82, 0.12);
+  --shadow-lg: 0 24px 60px rgba(18, 38, 82, 0.16);
+  --shadow-xl: 0 36px 80px rgba(8, 16, 31, 0.22);
+  --shadow-hero: 0 30px 90px rgba(8, 16, 31, 0.24);
+  --shadow-button: 0 16px 30px rgba(47, 109, 246, 0.24);
+  --shadow-glow-primary: 0 0 40px rgba(27, 181, 216, 0.16);
+  --shadow-glow-secondary: 0 0 40px rgba(255, 124, 109, 0.16);
+  --shadow-card: 0 18px 42px rgba(18, 38, 82, 0.12);
+  --shadow-card-hover: 0 26px 64px rgba(18, 38, 82, 0.18);
+
+  --border-subtle: 1px solid rgba(93, 116, 164, 0.14);
+  --border-glass: 1px solid rgba(255, 255, 255, 0.52);
+  --border-accent: 1px solid rgba(47, 109, 246, 0.18);
+
+  --transition-fast: 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 420ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 460ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-navbar: 1000;
+  --z-modal: 2000;
+  --z-chatbot: 2500;
+  --z-toast: 3000;
+
+  --navbar-height: 92px;
+  --navbar-height-mobile: 78px;
+  --container-max-width: 1320px;
+  --container-padding-desktop: 32px;
+  --container-padding-laptop: 24px;
+  --container-padding-tablet: 20px;
+  --container-padding-mobile: 16px;
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: var(--color-bg-glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: var(--border-glass);
+  border-radius: var(--radius-xl);
+}
+
+.glass-card:hover {
+  background: var(--color-bg-glass-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(27, 181, 216, 0.14);
+  }
+
+  50% {
+    box-shadow: 0 0 0 14px rgba(27, 181, 216, 0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

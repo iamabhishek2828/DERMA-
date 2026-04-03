@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./backend:/app
+  frontend:
+    build: .
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

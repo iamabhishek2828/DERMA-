@@ -1,0 +1,208 @@
+.dermai-assistant {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: var(--z-chatbot);
+  width: min(390px, calc(100vw - 24px));
+}
+
+.dermai-assistant--fullscreen {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.dermai-assistant-page {
+  display: grid;
+  align-items: center;
+}
+
+.dermai-assistant__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(111, 134, 182, 0.14);
+  box-shadow: var(--shadow-xl);
+  padding: 18px;
+  display: grid;
+  gap: 16px;
+}
+
+.dermai-assistant__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(47, 109, 246, 0.04) 0%, rgba(255, 255, 255, 0) 42%);
+  pointer-events: none;
+}
+
+.dermai-assistant__card--fullscreen {
+  min-height: 620px;
+}
+
+.dermai-assistant__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(47, 109, 246, 0.08);
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.dermai-assistant__header,
+.dermai-assistant__stream,
+.dermai-assistant__composer {
+  position: relative;
+  z-index: 1;
+}
+
+.dermai-assistant__identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 24px;
+  background: rgba(47, 109, 246, 0.06);
+}
+
+.dermai-assistant__avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 2px solid rgba(47, 109, 246, 0.14);
+}
+
+.dermai-assistant__identity strong,
+.dermai-assistant__identity span {
+  display: block;
+}
+
+.dermai-assistant__identity strong {
+  color: var(--text-dark);
+  font-family: var(--font-family-display);
+  font-size: 1.22rem;
+  letter-spacing: -0.04em;
+}
+
+.dermai-assistant__identity span {
+  margin-top: 4px;
+  color: var(--text-medium);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.dermai-assistant__stream {
+  min-height: 310px;
+  max-height: 430px;
+  overflow-y: auto;
+  padding: 6px 4px 6px 2px;
+  display: grid;
+  gap: 12px;
+}
+
+.dermai-assistant__card--fullscreen .dermai-assistant__stream {
+  min-height: 420px;
+  max-height: 520px;
+}
+
+.dermai-assistant__bubble {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  max-width: 92%;
+}
+
+.dermai-assistant__bubble p {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 20px;
+  line-height: 1.72;
+}
+
+.dermai-assistant__bubble-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  margin-top: 4px;
+}
+
+.dermai-assistant__bubble--bot p {
+  background: rgba(47, 109, 246, 0.08);
+  color: var(--text-dark);
+}
+
+.dermai-assistant__bubble--user {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.dermai-assistant__bubble--user p {
+  background: var(--gradient-primary);
+  color: var(--white);
+}
+
+.dermai-assistant__bubble--loading p {
+  color: var(--text-medium);
+  font-style: italic;
+}
+
+.dermai-assistant__composer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+}
+
+.dermai-assistant__composer input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(111, 134, 182, 0.18);
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.dermai-assistant__composer input:focus {
+  outline: none;
+  border-color: rgba(47, 109, 246, 0.34);
+  box-shadow: 0 0 0 4px rgba(47, 109, 246, 0.08);
+}
+
+.dermai-assistant__composer button {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: var(--gradient-primary);
+  color: var(--white);
+  box-shadow: var(--shadow-button);
+  cursor: pointer;
+}
+
+.dermai-assistant__composer button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 640px) {
+  .dermai-assistant {
+    right: 12px;
+    bottom: 12px;
+    width: calc(100vw - 24px);
+  }
+
+  .dermai-assistant__card {
+    border-radius: 24px;
+    padding: 14px;
+  }
+}

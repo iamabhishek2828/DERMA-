@@ -1,0 +1,80 @@
+.doctor-list-page__layout {
+  display: grid;
+  gap: 24px;
+}
+
+.doctor-list-hero {
+  padding: 30px 32px;
+  display: grid;
+  gap: 16px;
+  max-width: 860px;
+}
+
+.doctor-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.doctor-list-card {
+  padding: 26px;
+  display: grid;
+  gap: 18px;
+}
+
+.doctor-list-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(47, 109, 246, 0.08);
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.doctor-list-card h2 {
+  margin: 0;
+  font-family: var(--font-family-display);
+  font-size: 1.48rem;
+  letter-spacing: -0.04em;
+  color: var(--text-dark);
+}
+
+.doctor-list-card__meta {
+  display: grid;
+  gap: 12px;
+}
+
+.doctor-list-card__meta div {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  color: var(--text-dark-secondary);
+  line-height: 1.72;
+}
+
+.doctor-list-card__meta svg {
+  margin-top: 4px;
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.doctor-list-card__button {
+  width: 100%;
+}
+
+@media (max-width: 880px) {
+  .doctor-list-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .doctor-list-hero,
+  .doctor-list-card {
+    padding: 24px;
+  }
+}

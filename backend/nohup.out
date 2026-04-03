@@ -1,0 +1,5 @@
+TensorFlow not available - ML model endpoints will be disabled
+Traceback (most recent call last):
+  File "/Users/abhishekchoudhary/Abhi Project/DermAi-clean/backend/app.py", line 14, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

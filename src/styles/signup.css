@@ -1,0 +1,182 @@
+.page-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f0fa 0%, #f8fcff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-outer {
+  background: rgba(255,255,255,0.85);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px 0 #b5d0e6, 0 2px 8px #e3f0fa;
+  border: 1.5px solid #e3f0fa;
+  padding: 48px 38px 38px 38px;
+  min-width: 340px;
+  max-width: 420px;
+  margin: 0 auto;
+  z-index: 2;
+  font-family: 'Montserrat', Arial, sans-serif;
+  animation: popin 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+  backdrop-filter: blur(12px);
+}
+
+@keyframes popin {
+  0% { transform: scale(0.8) translateY(40px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.form-title {
+  color: #2196f3;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 12px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  border: 1.5px solid #e3f0fa;
+  background: #f8fcff;
+  color: #222;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+  box-shadow: 0 2px 8px #e3f0fa22;
+}
+
+.form-input:focus {
+  border: 1.5px solid #2196f3;
+}
+
+.main-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(90deg, #00c3ff 0%, #3a7bd5 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 4px 16px #b5d0e655;
+}
+
+.main-btn:hover {
+  background: linear-gradient(90deg, #3a7bd5 0%, #00c3ff 100%);
+  box-shadow: 0 8px 32px #b5d0e688;
+  transform: scale(1.04) translateY(-2px);
+}
+
+.divider {
+  text-align: center;
+  margin: 1rem 0;
+  color: #aaa;
+  position: relative;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.divider span {
+  background: #fff;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1.5px;
+  background: #e3f0fa;
+}
+
+.divider:before {
+  left: 0;
+}
+
+.divider:after {
+  right: 0;
+}
+
+.google-login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  border: 1.5px solid #e3f0fa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #e3f0fa22;
+}
+
+.google-login-btn:hover {
+  background: #e3f0fa;
+}
+
+.google-logo {
+  width: 22px;
+  height: 22px;
+}
+
+.form-msg {
+  background: #fff;
+  border: 1.5px solid #ff4d4f;
+  color: #ff4d4f;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px #ff4d4f22;
+  padding: 12px 0;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  min-width: 220px;
+  z-index: 10;
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% { transform: rotateZ(-4deg) scale(1.05);}
+  20% { transform: rotateZ(-6deg) scale(1.05);}
+  40% { transform: rotateZ(-2deg) scale(1.05);}
+  60% { transform: rotateZ(-6deg) scale(1.05);}
+  80% { transform: rotateZ(-2deg) scale(1.05);}
+  100% { transform: rotateZ(-4deg) scale(1.05);}
+}
+
+@media (max-width: 600px) {
+  .form-outer {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 18px 6vw;
+    font-size: 16px;
+  }
+  .google-login-btn {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  .form-input {
+    font-size: 15px;
+    padding: 10px 8px;
+  }
+}
